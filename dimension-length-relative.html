@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Implementasi Dimension-Length(Relative) pada CSS Value</title>
   <style>
+    /* RELATIVE UNIT (em) */
     .box-em {
       font-size: 30px;
+      background-color: pink;
     }
 
     .box-em h1 {
@@ -20,12 +22,39 @@
       /* p ukurannya 60px karena 2em = ukuran dari font yang sedang dugunakan * 2 */
       font-size: 2em;
     }
+
+
+    /* RELATIVE UNIT (rem) */
+    html {
+      font-size: 50px;
+    }
+
+    .box-rem {
+      font-size: 30px;
+      background-color: plum;
+    }
+
+    .box-rem h1 {
+      /* h1 ukurannya 50px karena 1rem = ukuran dari font root nya <html> */
+      font-size: 1rem;
+    }
+
+    .box-rem p {
+      /* p ukurannya 100px karena 2rem = ukuran dari font rootnya <html> * 2 */
+      font-size: 2rem;
+    }
   </style>
 </head>
 
 <body>
   <!-- Relative Unit (em) yaitu relative terhadap ukuran font yang sedang digunakan -->
   <div class="box-em">
+    <h1>Hello World</h1>
+    <p>Wiwin Mafiroh</p>
+  </div>
+
+  <!-- Relative Unit (rem) yaitu relative terhadap ukuran font "root" / <html> -->
+  <div class="box-rem">
     <h1>Hello World</h1>
     <p>Wiwin Mafiroh</p>
   </div>
