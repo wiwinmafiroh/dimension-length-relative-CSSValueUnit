@@ -1,0 +1,36 @@
+/* RELATIVE UNIT (em) */
+.box-em {
+  font-size: 30px;
+  background-color: pink;
+}
+
+.box-em h1 {
+  /* h1 ukurannya 30px karena 1em = ukuran dari font yang sedang digunakan oleh elemen tersebut */
+  font-size: 1em;
+}
+
+.box-em p {
+  /* p ukurannya 60px karena 2em = ukuran dari font yang sedang dugunakan * 2 */
+  font-size: 2em;
+}
+
+
+/* RELATIVE UNIT (rem) */
+html {
+  font-size: 50px;
+}
+
+.box-rem {
+  font-size: 30px;
+  background-color: plum;
+}
+
+.box-rem h1 {
+  /* h1 ukurannya 50px karena 1rem = ukuran dari font root nya <html> */
+  font-size: 1rem;
+}
+
+.box-rem p {
+  /* p ukurannya 100px karena 2rem = ukuran dari font rootnya <html> * 2 */
+  font-size: 2rem;
+}
