@@ -6,10 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Implementasi Dimension-Length(Relative) pada CSS Value</title>
+  <style>
+    .box-em {
+      font-size: 30px;
+    }
+
+    .box-em h1 {
+      /* h1 ukurannya 30px karena 1em = ukuran dari font yang sedang digunakan oleh elemen tersebut */
+      font-size: 1em;
+    }
+
+    .box-em p {
+      /* p ukurannya 60px karena 2em = ukuran dari font yang sedang dugunakan * 2 */
+      font-size: 2em;
+    }
+  </style>
 </head>
 
 <body>
-
+  <!-- Relative Unit (em) yaitu relative terhadap ukuran font yang sedang digunakan -->
+  <div class="box-em">
+    <h1>Hello World</h1>
+    <p>Wiwin Mafiroh</p>
+  </div>
 </body>
 
 </html>
