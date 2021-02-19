@@ -34,3 +34,19 @@ html {
   /* p ukurannya 100px karena 2rem = ukuran dari font rootnya <html> * 2 */
   font-size: 2rem;
 }
+
+
+/* RELETIVE UNIT (ch) */
+/* 
+digunakan untuk membuat sebuah placeholder untuk tempat yang belum tau isinya. 
+misalkan isinya diambil dari database, atau input dari user dan 
+ingin memastikan bahwa elemen ini ukurannya ga lebih dari 100 karakter (misalnya)
+*/
+.box-ch {
+  /* karena menggunakan font-family: Georgia (serif) dimana setiap huruf memiliki lebar yang berbeda, maka yang di ambil adalah karakter '0'. */
+  /* maka, lebar boxnya adalah lebar karakter '0' * 60 atau ukurannya adalah 60 karakter 0 untuk font 'Georgia' */
+  font-family: Georgia;
+  font-size: 20px;
+  width: 60ch;
+  background-color: lightblue;
+}
