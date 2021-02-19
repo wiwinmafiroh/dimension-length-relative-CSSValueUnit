@@ -63,3 +63,22 @@ ingin memastikan bahwa elemen ini ukurannya ga lebih dari 100 karakter (misalnya
   /* membuka website pada device apapun (hp, tablet, pc, atau laptop). elemen ini lebarnya akan 50% dari layar yang sedang dilihat */
   width: 50vw;
 }
+
+
+/* RELATIVE UNIT (vmin&vmax) */
+/* digunakan untuk membuat website responsive di semua device */
+.box-vmin-vmax {
+  background-color: lightslategray;
+  /* 100% dari ukuran Viewport yang minimal */
+  /* vmin adalah ukuran layar yang paling kecil */
+  /* 
+  height: 100vmin;
+  width: 100vmin; 
+  */
+
+  /* mengambil ukuran dari viewport terpanjangnya (tingginya) */
+  /* panjang dan lebarnya akan sama menyesuaikan dengan viewport maksimalnya */
+  height: 100vmax;
+  /* maka, lebarnya menyesuaikan dengan ukuran tinggi maksimalnya */
+  width: 100max;
+}
