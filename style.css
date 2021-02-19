@@ -36,7 +36,7 @@ html {
 }
 
 
-/* RELETIVE UNIT (ch) */
+/* RELATIVE UNIT (ch) */
 /* 
 digunakan untuk membuat sebuah placeholder untuk tempat yang belum tau isinya. 
 misalkan isinya diambil dari database, atau input dari user dan 
@@ -49,4 +49,17 @@ ingin memastikan bahwa elemen ini ukurannya ga lebih dari 100 karakter (misalnya
   font-size: 20px;
   width: 60ch;
   background-color: lightblue;
+}
+
+
+/* RELATIVE UNIT (vh&vw) */
+/* digunakan untuk membuat website responsive di semua device */
+.box-vhvw {
+  background-color: lightsalmon;
+  /* 100% dari tinggi Viewport */
+  /* membuka website pada device apapun (hp, tablet, pc, atau laptop). elemen ini tingginya akan memenuhi layar yang sedang dilihat */
+  height: 100vh;
+  /* 50% dari lebar Viewport */
+  /* membuka website pada device apapun (hp, tablet, pc, atau laptop). elemen ini lebarnya akan 50% dari layar yang sedang dilihat */
+  width: 50vw;
 }
